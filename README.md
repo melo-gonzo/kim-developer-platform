@@ -1,14 +1,22 @@
 # KIM Developer Platform FOR Intel-MatSciML Tests and Integration
 
+> This is a fork of KDP (`github.com/openkim/developer-platform`)[https://github.com/openkim/developer-platform]. I created this history-less fork of it as I could not push my changes to traditional fork for some reason
+
+
 This is a fork of KDP for Intel-MatSciML project,
 
 CHANGES:
 + Added packages for Intel-MatSciML
 + Based on ubuntu 22.04
 
-To make image:
+## To make image:
 
-> make
+```bash
+git clone https://github.com/ipcamit/kdp-developer-platform.git
+cd kdp-developer-platform
+make
+docker run -it --name kim_dev kdp-matsciml bash
+```
 
 
 ## Background
