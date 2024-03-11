@@ -78,7 +78,7 @@ RUN pip install pydantic==1.10.12
 RUN pip install pymatgen==2023.7.20
 RUN pip install schema>=0.7.5
 RUN pip install ase>=3.22.1
-RUN pip install matgl==0.9.2
+RUN pip install matgl==1.0.0
 RUN pip install einops==0.7.0
 RUN pip install mendeleev==0.14.0
 RUN pip install e3nn==0.5.1
@@ -99,4 +99,5 @@ RUN pip install torch-geometric
 RUN pip uninstall -y dgl
 RUN pip install dgl -f https://data.dgl.ai/wheels/repo.html
 
+RUN pip install loguru
 RUN pip install kusp
