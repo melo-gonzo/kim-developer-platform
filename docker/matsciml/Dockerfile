@@ -60,7 +60,7 @@ RUN pip install -q \
     scikit-learn
 
 RUN pip install psutil
-RUN pip install pytorch_lightning==2.2.2
+RUN pip install pytorch_lightning==2.2.4
 RUN pip install dgllife==0.3.2
 RUN pip install rdkit==2023.9.5
 RUN pip install numba>=0.55.0
@@ -94,8 +94,8 @@ RUN pip install pre-commit
 RUN pip install bandit
 RUN pip install pytest
 
-RUN pip install torch-scatter -f https://data.pyg.org/whl/torch-2.2.0+cpu.html
-RUN pip install torch-sparse -f https://data.pyg.org/whl/torch-2.2.0+cpu.html
+RUN pip install torch-scatter -f https://data.pyg.org/whl/torch-2.3.0+cpu.html
+RUN pip install torch-sparse -f https://data.pyg.org/whl/torch-2.3.0+cpu.html
 RUN pip install torch-geometric
 
 RUN pip uninstall -y dgl
